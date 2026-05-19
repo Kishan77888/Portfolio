@@ -13,7 +13,7 @@ export const personalInfo = {
   github: "https://github.com/Kishan77888",
   location: "Kharar, Punjab, India",
   resumeLink: "Kumar_kishan_Resume.pdf",
-  profilePhoto: "profile.jpg",
+  profilePhoto: "profile.jpeg",
 };
 
 export const aboutMe = {
