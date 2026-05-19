@@ -1,0 +1,128 @@
+.certs__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.certs__card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+}
+
+.certs__icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--accent-subtle);
+  color: var(--accent);
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.certs__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.certs__name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+  line-height: 1.4;
+}
+
+.certs__issuer {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.certs__date {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+.certs__validity {
+  font-size: 0.7rem;
+  color: var(--success);
+  margin-top: 0.15rem;
+}
+
+.certs__view-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.35rem 0.65rem;
+  background: var(--accent-subtle);
+  color: var(--accent);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+  flex-shrink: 0;
+  font-family: inherit;
+}
+
+.certs__view-btn:hover {
+  border-color: var(--accent);
+  background: transparent;
+}
+
+/* Lightbox */
+.certs__lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 2rem;
+  backdrop-filter: blur(4px);
+}
+
+.certs__lightbox-content {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+}
+
+.certs__lightbox-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.certs__lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.certs__lightbox-img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .certs__grid {
+    grid-template-columns: 1fr;
+  }
+}

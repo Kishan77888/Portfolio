@@ -1,0 +1,47 @@
+.achieve__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.achieve__card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.achieve__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: var(--accent-subtle);
+  color: var(--accent);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.achieve__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.achieve__desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .achieve__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .achieve__grid {
+    grid-template-columns: 1fr;
+  }
+}
