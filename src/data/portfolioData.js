@@ -12,8 +12,8 @@ export const personalInfo = {
   linkedin: "https://www.linkedin.com/in/kumar-kishan-security/",
   github: "https://github.com/Kishan77888",
   location: "Kharar, Punjab, India",
-  resumeLink: "/Kumar_kishan_Resume.pdf", // Place your resume PDF in the public/ folder
-  profilePhoto:"/profile.jpg" // Place your photo as public/profile.jpg
+  resumeLink: "Kumar_kishan_Resume.pdf",
+  profilePhoto: "profile.jpg",
 };
 
 export const aboutMe = {
@@ -138,43 +138,43 @@ export const certifications = [
     issuer: "Oracle University",
     date: "July 2024",
     validity: "Valid until July 2026",
-    image: "/certificates/oracle-oci-genai.png",
+    image: "certificates/oracle-oci-genai.png",
   },
   {
     name: "Junior Cybersecurity Analyst Career Path",
     issuer: "Cisco Networking Academy",
     date: "June 2023",
-    image: "/certificates/cisco-cybersecurity.jpg",
+    image: "certificates/cisco-cybersecurity.jpg",
   },
   {
     name: "Security Intelligence Engineer",
     issuer: "IBM",
     date: "",
-    image: "/certificates/Security Intelligence Engineer.png",
+    image: "certificates/Security Intelligence Engineer.png",
   },
   {
     name: "Cloud Security",
     issuer: "IBM",
     date: "",
-    image: "/certificates/Screenshot 2026-05-19 130826.png",
+    image: "certificates/Screenshot 2026-05-19 130826.png",
   },
   {
     name: "Google Cybersecurity",
     issuer: "Coursera",
     date: "",
-    image: "/certificates/google cybersecurity (Coursera).jpg",
+    image: "certificates/google cybersecurity (Coursera).jpg",
   },
   {
     name: "Cybersecurity Operations Fundamentals (CyberOps Associate)",
     issuer: "Cisco",
     date: "",
-    image: "/certificates/Cybersecurity Operations_page-0001.jpg",
+    image: "certificates/Cybersecurity Operations_page-0001.jpg",
   },
   {
     name: "Cyber Threat & Incident Response Job Simulation",
     issuer: "Deloitte Australia (Forage)",
     date: "",
-    image: "/certificates/Dellooite.jpg",
+    image: "certificates/Dellooite.jpg",
   },
 ];
 

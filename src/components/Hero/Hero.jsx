@@ -6,6 +6,7 @@ import './Hero.css';
 
 export default function Hero() {
   const [imgError, setImgError] = useState(false);
+  const base = import.meta.env.BASE_URL;
 
   return (
     <section className="hero" id="hero">
@@ -27,7 +28,7 @@ export default function Hero() {
               Get In Touch
             </a>
             <a
-              href={personalInfo.resumeLink}
+              href={`${base}${personalInfo.resumeLink}`}
               className="btn-outline"
               target="_blank"
               rel="noopener noreferrer"
@@ -75,7 +76,7 @@ export default function Hero() {
           <div className="hero__avatar-wrapper">
             {personalInfo.profilePhoto && !imgError ? (
               <img
-                src={personalInfo.profilePhoto}
+                src={`${base}${personalInfo.profilePhoto}`}
                 alt={personalInfo.name}
                 className="hero__avatar-img"
                 onError={() => setImgError(true)}

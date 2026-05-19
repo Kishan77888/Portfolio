@@ -7,6 +7,7 @@ import './Certifications.css';
 export default function Certifications() {
   const [activeImage, setActiveImage] = useState(null);
   const [failedImages, setFailedImages] = useState(new Set());
+  const base = import.meta.env.BASE_URL;
 
   const handleViewCert = (image) => {
     if (image && !failedImages.has(image)) {
@@ -52,7 +53,7 @@ export default function Certifications() {
               {cert.image && !failedImages.has(cert.image) && (
                 <button
                   className="certs__view-btn"
-                  onClick={() => handleViewCert(cert.image)}
+                  onClick={() => handleViewCert(`${base}${cert.image}`)}
                   aria-label="View certificate"
                 >
                   <FiExternalLink size={14} />
